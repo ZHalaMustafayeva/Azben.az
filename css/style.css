@@ -43,6 +43,7 @@ body{
 	text-decoration: none;
 	list-style: none;
     outline: none !important;
+    overflow-x: hidden;
 }
 
 header .container-fluid {
@@ -341,6 +342,7 @@ border: 1px solid transparent;
     position: absolute;
     bottom: 4%;
     left: 50%;
+    transform: translateX(-50%);
 }
   .owl-dots button.owl-dot {
     width: 13px;
@@ -535,7 +537,6 @@ text-decoration: none;
 }
 .item-views.table-elements .item .image {
     text-align: center;
-    vertical-align: middle;
     display: block;
     position: relative;
     overflow: hidden;
@@ -969,8 +970,212 @@ text-decoration: none;
 .foterBootom1 a:hover{
     text-decoration: none;
 }
+    /* Hanburger menu */
 
+.hanburger-menu{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+    display: none;
+    margin-left: 20px;
+}
+.hanburger-menu span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 1px;
+    transition: .4s;
+    background-color: #2f3573;
+}
+.hanburger-menu span:nth-child(3){
+    width: 50%;
+    display: flex;
+    align-self: flex-end;
+}
+.active-hamb {
+    transform: rotate(-45deg);
+}
+.active-hamb span:first-child{
+    transform:rotate(-91deg) translate(-17px, 0px)
+}
+.active-hamb span:nth-child(3){
+    transform: rotate(-269deg) translate(-8px, 8px);
+        
+} 
+
+@media(max-width:1024px){
+    .item-views.news_block.portfolio.type_2 .item .special{
+        padding: 108px;
+    }
+    .callDes .callHead{
+        font-size: 23px !important;
+    }
+    .callDes .callLink a{
+        font-size: 14px;
+        padding: 16px 37px;
+    }
+    .info{
+        padding: 0;
+    }
+    .info .phone a,.info .email a, .info .location a{
+        font-size: 14px;
+    }
+    .hanburger-menu{
+        display: flex;
+    }
+    .collapse{
+        background-color:#fff;
+        height: 100vh;
+        padding: 35px;
+        position: absolute;
+        width: 80%;
+        top: 100%;
+        right: -100%;
+        display: none;
+    }
+    .collapse .navbar-nav {
+        align-items: flex-start;
+    }
+    .nav-item .nav-link{
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid rgba(0,0,0,0.14) !important;
+        color: #454749;
+        font-size: 15px;
+        padding: 10px 0;
+    }
+    .collapse .navbar-nav .nav-item {
+        width: 100%;
+    }
+    .collapse{
+        background-color:#fff;
+        height: 100vh;
+        padding: 35px;
+        position: absolute;
+        width: 80%;
+        top: 100%;
+        right: -100%;
+    }
+    .collapse .navbar-nav {
+        align-items: flex-start;
+    }
+    .nav-item .nav-link{
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid rgba(0,0,0,0.14) !important;
+        color: #454749;
+        font-size: 15px;
+        padding: 10px 0;
+    }
+    .collapse .navbar-nav .nav-item {
+        width: 100%;
+    }
+    .wrapper .container-fluid{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .mobile-ovarley{
+        background-color: #00000069 !important;
+        height: 100vh;
+        z-index: -1;
+        display: none;
+    }
+    .wrapper{ 
+        padding:0 40px;
+    }
+    .carsuelInfo{
+        padding:0 40px;
+    }
+    .navbar-nav{
+        display: block !important;
+    }
+    .navbar-expand-lg .navbar-collapse{
+        display: flex;
+        align-items: flex-start;
+    }
+    .bid{
+        padding: 0 26px;
+    }
+    .footer_bottom .okmedia {
+        width: 13%;
+    }
+    /* .wrapper .container-fluid{
+        overflow: hidden;
+    } */
+}
+@media(max-width:991px){
+    .item-views.news_block.portfolio.type_2 .item .special{
+        padding: 78px;
+    }
+    .item-views.news_block.portfolio.type_2 .item .info{
+        padding: 0 30px;
+    }
+    .item-views.news_block.portfolio.type_2 .item .name{
+        font-size: 16px;
+    }
+    .callDes{
+        width: 50%;
+    }
+    .callWrapper{
+        background-size: 81%;
+    }
+}
+@media(max-width:768px){
+    .item-views.news_block.portfolio.type_2 .item .special{
+        padding: 78px;
+    }
+    .item-views.news_block.portfolio.type_2 .item .name {
+        font-size: 17px;
+    }
+    .item-views.news_block.portfolio.type_2 .item .info{
+        padding: 0 26px;
+    }
+    .callDes{
+        padding-right:0 !important;
+    }
+    .callDes .callHead{
+        font-size: 22px !important;
+    }
+    .callDes .callLink a{
+        padding: 16px 33px;
+    }
+    .callWrapper{
+        background-size: 81%;
+    }
+    .footer_bottom .okmedia {
+        width: 14%;
+    }
+    .caruselImg{
+        display: none;
+    }
+    .carsuelInfo{
+        justify-content: center;
+    }
+    .caruselText{
+        padding:171px 45px;
+        width: 100%;
+    }
+    .footer_top .row{
+        width: 100% !important;
+    }
+    .logo, .contactHead{
+        width: 50%;
+    }
+    .autosection .row{
+        justify-content: center !important;
+        margin-left: 0;
+    }
+    .navbar-nav{
+        display: block;
+    }
+}
 @media (max-width:756px){
+   
     .autoWrapper {
         width: calc(48.33% - 20px);
         margin: 10px;
@@ -1004,6 +1209,7 @@ text-decoration: none;
     .supWrapper {
         width: 100%;
         flex-wrap: wrap;
+        padding-top: 30px;
         position: relative;
     }
     .superiorities {
@@ -1021,7 +1227,7 @@ text-decoration: none;
     .wrapper .navbar-header {
         float: none;
         padding: 14px 0px;
-        display: block !important;
+        /* display: block !important; */
         text-align: center;
     }
     .contactHead {
@@ -1061,12 +1267,35 @@ text-decoration: none;
             }    
    .contact-block{
     width: 70%;
-    margin: 0 auto;
+    margin: 20px auto;
    }
    .autosection {
     margin-top: 0;
 }
 }
-@media (max-width:400px){
-
+@media (max-width:425px){
+    .callWrapper{
+        background-size: cover;
+    }
+    .footer_bottom .okmedia {
+        width: 22%;
+    }
+    .caruselText h1{
+        font-size: 35px;
+    }
+    .caruselText .btn{
+        padding: 10px 14px;
+    }
+    .phone a{
+        font-size: 12px;
+    }
+    .bid span{
+        font-size: 12px;
+    }
+    .caruselText h1{
+        font-size: 32px;
+    }
+    .caruselText .btn{
+        padding: 10px 7px;
+    }
 }
