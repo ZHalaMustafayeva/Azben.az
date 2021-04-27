@@ -28,10 +28,10 @@
 
 <body>
     <!-- Header Section Start -->
-    <header class="header">
-        <div class="wrapper">
+    <header class="header fixed-top  ">
+        <div class="wrapper navbar-fixed-top">
             <div class="container-fluid">
-                <div class="navbar-header d-flex">
+                <div class="navbar-header d-flex ">
                     <div class="logo">
                         <a href="index.html">
                             <img src="img/logo2.png" alt="">
@@ -39,16 +39,26 @@
                         <span>ISO 9001:2015</span>
 
                     </div>
-
                     <div class="contactHead ml-auto d-flex">
-                        <div class="language">
-                            <div class="language__current">
-                                <span class="language-item js-language-selected"><span
-                                        class="i-ico i-ico_flag-ru"></span></span>
-                                <div class="language-window">
-                                    <p class="language-window__item"><span class="i-ico i-ico_flag-ru"></span></p>
-                                    <a href="" class="language-window__item"><span
-                                            class="i-ico i-ico_flag-en"></span></a>
+                        <div class="lang">
+                            <div class="az">
+                                <a href="#">
+                                   <img src="img/az-flag.svg" alt=""> <p>AZ</p> 
+                                </a>
+                                
+                            </div>
+                            <div class="mix-lang">
+                                <div class="en">
+                                    <a href="#">
+                                        <img src="img/eng-flag.svg" alt=""> <p>EN</p>
+                                    </a>
+                                    
+                                </div>
+                                <div class="ru">
+                                    <a href="#">
+                                        <img src="img/rus-flaq.svg" alt=""> <p>RU</p>
+                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -58,11 +68,11 @@
                             </a>
                             <a href="tel:+994502663636">+994 50 266 36 36 </a>
                         </div>
-                        <div class="bid">
+                        <div class="bid" data-toggle="modal" data-target="#exampleModalCenter">
                             <a href="">
                                 <i class="far fa-bell"></i>
                             </a>
-                            <span>Qiymət təklifi al</span>
+                            <span >Qiymət təklifi al</span>
                         </div>
                         <div class="hanburger-menu">
                             <span class="line-menu"></span>
@@ -84,10 +94,10 @@
                                 <a class="nav-link" href="#">Məhsullar</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" data-toggle="dropdown">
+                                <a class="nav-link" href="#" >
                                     Layihələr
                                 </a>
-                                <ul>
+                                <ul class="open">
                                     <li><a href="">lorem</a></li>
                                     <li><a href="">lorem</a></li>
                                     <li><a href="">lorem</a></li>
@@ -102,13 +112,14 @@
                                 <a class="nav-link" href="#">Bizimlə Əlaqə</a>
                             </li>
                         </ul>
-                        <div class="bid">
+                        <div class="bid" data-toggle="modal" data-target="#exampleModalCenter">
                             <a href="">
                                 <i class="far fa-bell"></i>
                             </a>
                             <span>Qiymət təklifi al</span>
                         </div>
-                    </div>    
+                        
+                    </div>  
                 </nav>                
             </div>
         </div>
@@ -138,7 +149,7 @@
                                         <a href="" class="btn btn-primary">Lorem lre loer</a>
                                     </div>
                                     <div class="caruselImg">
-                                        <img src="img/caruselImg.png" alt="">
+                                        <img src="img/product2.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -161,7 +172,7 @@
                                         <a href="" class="btn btn-primary">Lorem lre loer</a>
                                     </div>
                                     <div class="caruselImg">
-                                        <img src="img/img1.png" alt="">
+                                        <img src="img/prodcut22.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -184,7 +195,7 @@
                                         <a href="" class="btn btn-primary">Lorem lre loer</a>
                                     </div>
                                     <div class="caruselImg">
-                                        <img src="img/img1.png" alt="">
+                                        <img src="img/imgProduct.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -201,7 +212,7 @@
 
     <div class="padding-block superiorities container-fluid">
         <div class="container">
-            <div class="row">
+            <div class="row no-gutters">
                 <div class="supWrapper">
                     <div class=" supInside text-center">
                         <div class="img-bg no-bg animated delay05 duration10 item_block opacity0 opacity1 flipInY">
@@ -264,7 +275,7 @@
     <!-- Products Section Start  -->
     <section id="auto" class="autosection">
         <div class="container">
-            <div class="row">
+            <div class="row no-gutters">
                 <div class="autoWrapper">
                     <div class="imgWrapauto">
                         <div class="item__main">
@@ -349,7 +360,7 @@
         <div class="container">
             <div class="news_block item-views table-elements blocks portfolio type_2 projects_scroll">
                 <div class="items">
-                    <div class="wrap row">
+                    <div class="wrap row no-gutters">
                         <div class="item_wrap slice_item big_block col-md-6 col-12">
                             <div class="item sliced ">
                                 <div class="img image ">
@@ -367,7 +378,7 @@
                             </div>
                         </div>
                         <div class="right_items slice_item col-md-6">
-                            <div class="row">
+                            <div class="row no-gutters">
                                 <div class="item_wrap full_item col-md-12  col-12">
                                     <div class="item sliced">
                                         <div class="img image">
@@ -478,7 +489,7 @@
                 <div class="overlay"></div>
                 <div class="callDes">
                     <div class="callHead">
-                        <p>Endrimli qiymət?</p>
+                        <p>Qiymət təklifi al</p>
                     </div>
                     <div class="callmiddle">
                         <p>Sürətli formada qiymət sorğusu göndərin və ən qısa zamanda sizə özəl təklifi əldə edin</p>
@@ -498,7 +509,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer_top">
-                <div class="row">
+                <div class="row no-gutters">
                     <div class="col-lg-2  col-md-2 col-6">
                         <div class="foterwrap">
                             <div class="footerHed">lorem</div>
@@ -512,7 +523,7 @@
                         <div class="foterwrap">
                             <div class="footerHed">lorem</div>
                             <div class="footerlink">
-                                <a href="">lorem lorem lorem loreme</a>
+                                <a href="">lorem lorem lorem </a>
                                 <a href="">lorem lorem lorem</a>
                             </div>
                         </div>
@@ -544,11 +555,11 @@
                             <span>İş qrafiki: I-IV günlər: 09:00-18:00</span>
                             <div class="email">
                                 <i class="fas fa-envelope"></i>
-                                <a href="mailto:okmedia@gamil.com">azben@gmail.com</a>
+                                <a href="mailto:sales@azben.az">sales@azben.az</a>
                             </div>
                             <div class="location">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <a href="mailto:okmedia@gamil.com">Sağdan dönəndə soldakı küçə</a>
+                                <a href="mailto:okmedia@gamil.com">AZ1025, Azərbaycan, Bakı, Xocalı pr. 55, AGA Biznes Mərkəzi</a>
                             </div>
                         </div>
                     </div>
@@ -579,17 +590,38 @@
             </div>
 
             <div class="footer_bottom">                 
-                <p class="okmedia">© 2021 Azben</p>
-                <p class="foterBootom1"> <a href="#" target="_blank">Site by OKmedia </a></p>
-                <p class="foterBootom1"><a href="#" target="_blank">lorem lorem loer</a></p>
+                <p class="okmedia">Copyright © 2021 Azben Supplies</p>
+                <p class="foterBootom1"> <a href="https://okmedia.az/" target="_blank">Site by OKmedia </a></p>
+                <p class="foterBootom1"><a href="#" target="_blank">All rights reserved</a></p>
             </div>
         </div>
         </div>
     </footer>
-
+    
     <!-- Footer section end -->
 
-
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Qiymət təklifi al</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  X
+                </button>
+              </div>
+          <form>
+              <input type="text" placeholder="Ad, Soyad">
+              <input type="number" placeholder="Telefon nömrəniz">
+              <input type="text" placeholder="Təmsil etdiyniz şirkət">
+              <textarea  placeholder="Qeydləriniz"></textarea>
+              <input type="submit" value="Göndər">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -600,6 +632,8 @@
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>

@@ -45,7 +45,31 @@ body{
     outline: none !important;
     overflow-x: hidden;
 }
-
+/* .row{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  
+}
+.row {
+    @include flex();
+    @include flex-wrap();
+    flex-flow: row;
+}
+.row [class*=col-]{
+    margin:0 -.3px;
+}
+row:before, .row:after {
+    content: " ";
+    display: table;
+   } */
 header .container-fluid {
     max-width: 1200px;
     padding: 0px 15px;
@@ -56,15 +80,53 @@ header{
     position: absolute;
     z-index: 200;
     width: 100%;
-    height: 130px;
+    /* height: 130px; */
     background: none;
-    padding-top: 10px;
 }
-
-
-
+.az{
+    padding: 7px 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d2961;
+    line-height: 1;
+}
+.az a{
+    color: #fff;
+    text-decoration: none;   
+}
+.mix-lang{
+    display: block;
+    display: none;
+    position: absolute;
+    top: 60px;
+    border-radius: 6px;
+    border: 1px solid black;
+    background-color: #2d2961;
+}
+.mix-lang a{
+    display: block;
+    color: #fff;
+    padding:7px 10px;
+    text-decoration: none;   
+}
+.mix-lang a, .az a{
+    font-size: 14px;
+}
+.lang img{
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+}
+.lang p{
+    display: inline-block;
+    line-height: 0;
+    margin: 0 !important;
+    padding:0 !important;
+}
 /* nav */
-
 .navbar {
     padding: 0 !important;
 }
@@ -107,15 +169,7 @@ header{
 .bid a i{
     color: #2d2961;
 }
-/* .collapse{
-	position: reltive;
-    float: none;
-    text-align: justify;
-    list-style-type: none;
-    line-height: 0;
-    zoom: 1;
-    right: 0;
-} */
+
 .collapse .navbar-nav{
 	width: 100%;
     display: flex;
@@ -183,24 +237,18 @@ header{
     border-left: 0;
 }
 .dropdown ul{
-    background: #232e43;
-    border-top: 0px;
+    position: absolute;
     top: 100%;
-    left: 0px;
-    margin-left: -20px;
+    background: #232e43;
     border-top-color: transparent !important;
     padding: 6px 4px 7px;
-    border: 0px;
-    border-radius: 0px;
     min-width: 190px;
     display: none;
-    position: absolute;
 }
 .dropdown ul li {
     display: block;
     margin-left: 0;
     padding: 10px;
-
 }
 .dropdown ul li a {
     color: #aeb9cc;
@@ -211,15 +259,8 @@ header{
     white-space: normal;
     text-decoration: none;
 }
-
-.dropdown ul li:hover{
-    background-color:  #48556d;
- }
-
-
-
-.dropdown:hover ul{
-    display: block;
+.collapse .phone{
+    display: none;
 }
 
 
@@ -252,7 +293,7 @@ header{
 }
 .owl-carousel .owl-item img {
     display: block;
-    width: 100%;
+    width: 96%;
     height: 100%;
     object-fit: cover;
 }
@@ -293,14 +334,13 @@ header{
 }
 .caruselImg{
     width: 50%;
+    padding: 26px 6px;
 }
 .caruselText{
     padding: 146px 0px;
     width: 50%;
 	display: flex;
 	flex-direction: column;
- 
-
 }
 .caruselText a:hover{
 	text-decoration: none;
@@ -318,9 +358,8 @@ header{
 	color: #232e43;
 }
 .owlItem .container{
- max-width: 1200px;
+    max-width: 1200px;
 }
-
 .caruselText .btn{
 	padding: 10px 20px;
     font-size: 15px;
@@ -330,10 +369,8 @@ header{
 	border-radius: 3px;
 }
 .caruselText .btn:hover{
-border: 1px solid transparent;
+    border: 1px solid transparent;
 }
-
-
 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
     display: block !important;
 }
@@ -345,7 +382,7 @@ border: 1px solid transparent;
     left: 50%;
     transform: translateX(-50%);
 }
-  .owl-dots button.owl-dot {
+.owl-dots button.owl-dot {
     width: 13px;
     height: 13px;
     border-radius: 50%;
@@ -354,29 +391,21 @@ border: 1px solid transparent;
     border-radius: 13px !important;
     margin: 0 3px;
     background-color: white;
-  }
-  .owl-dots button.owl-dot.active {
+}
+.owl-dots button.owl-dot.active {
     background-color:#2776c5;;
-  }
-  .owl-dots button.owl-dot:focus {
+}
+.owl-dots button.owl-dot:focus {
     outline: none;
-  }
- 
-  .owl-nav button:focus {
-      outline: none;
-  }
-
-
-
-
-
-
+}
+.owl-nav button:focus {
+    outline: none;
+}
 /* superiorities */
 .superiorities{
     background-color: #f3f6f9;
     height: auto;
     position: relative;
-
 }
 .superiorities .supInside {
     margin-top: 50px;
@@ -389,14 +418,12 @@ border: 1px solid transparent;
     padding-left: 15px;
     margin-bottom: 50px;
 }
-
 .superiorities .img-bg{
 	overflow: hidden;
 	height: 89px;
 	text-align: center;
 	position: relative;
 }
-
 .profit-title {
     font-size: 27px;
     font-family: gotham_proregular, 'Open Sans', sans-serif;
@@ -408,7 +435,6 @@ border: 1px solid transparent;
     position: relative;
     z-index: 1;
 }
-
 .supWrapper {
     display: flex;
     align-items: center;
@@ -419,13 +445,6 @@ border: 1px solid transparent;
 .supInside p{
 color: #525c70;
 }
-
-
-
-
-
-
-
 
 /* Products */
 
@@ -570,14 +589,11 @@ text-decoration: none;
 
 .item-views.news_block.portfolio.type_2 .item .sticker-block {
     display: inline-block;
-    padding: 4px 10px 5px;
+    padding: 3px 8px 3px;
     font-size: .6667em;
     line-height: 1.4em;
     color: #fff;
     border-radius: 1px;
-}
-
-.item-views.news_block.portfolio.type_2 .item .sticker-block {
     background: #7ac834;
 }
 .item .sticker-block, .news_block .item .sticker {
@@ -684,8 +700,7 @@ text-decoration: none;
 }
 
 #referance ul li {
-    margin-bottom: 20px;
-    margin-right: 20px;
+   margin: 10px;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
@@ -803,6 +818,7 @@ text-decoration: none;
     margin: -1px 0 0;
     background: #2f3338;
 }
+
 .footer .container{
     padding: 55px 0px 40px 0px;
 }
@@ -954,10 +970,11 @@ text-decoration: none;
     padding: 0;
     text-align: left;
     margin: 0;
-    width: 9%;
+    width: 17%;
 }
 .foterBootom1{
     margin-bottom: 0px !important;
+    width: 13%;
     
 }
 .foterBootom1 a{
@@ -971,11 +988,58 @@ text-decoration: none;
 .foterBootom1 a:hover{
     text-decoration: none;
 }
+    /* Modal section */
+    .modal-content{
+        height: 674px;
+    }
+    .modal-body{
+        padding: 30px 60px 0 60px;
+        border-radius: 10px;
+    }
+    .modal-header{
+        border:none;
+        padding: 1rem 0 !important;
+    }
+    .modal-body form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .modal-title{
+        font-weight: 400;
+    }
+    .close {
+       font-weight: 400;
+       outline: none !important;
+    }
+    .modal-body form input, .modal-body form textarea{
+        width: 100%;
+        border: 1px solid #e6ecf2 !important;
+        padding: 12px 20px;
+        border-radius: 4px !important;
+        font-size: 14px !important;
+        outline: none;
+        transition: all .3s ease;
+        padding: 12px ;
+        margin: 15px 0;
+    }
+    textarea{
+        height: 160px;
+    }
+    ::placeholder{
+        color: rgb(179, 176, 176);
+    }
+    [type="submit"]{
+        background-color: #2d2961;
+        color: #fff;
+    }
+
     /* Hanburger menu */
 
 .hanburger-menu{
     width: 36px;
-    height: 36px;
+    height: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -983,7 +1047,7 @@ text-decoration: none;
     cursor: pointer;
     transition: .4s;
     display: none;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 .hanburger-menu span{
     display: block;
@@ -1002,14 +1066,21 @@ text-decoration: none;
     transform: rotate(-45deg);
 }
 .active-hamb span:first-child{
-    transform:rotate(-91deg) translate(-17px, 0px)
+    transform: rotate(-91deg) translate(-13px, 1px);
 }
 .active-hamb span:nth-child(3){
-    transform: rotate(-269deg) translate(-8px, 8px);
+    transform: rotate(-269deg) translate(-10px, 8px);
         
 } 
 .collapse .bid{
     display:none;
+}
+.bg-color{
+    transition: background-color 200ms linear;
+
+}
+.collapse .bid a i, .collapse .bid span{
+    color: #fff;
 }
 @media(max-width:1024px){
     .wrapper{ 
@@ -1032,12 +1103,32 @@ text-decoration: none;
         padding: 0 26px;
     }
     .footer_bottom .okmedia {
-        width: 13%;
+        width: 20%;
+    }
+    .item-views.news_block.portfolio.type_2 .item .special{
+        padding: 109px;
+    }
+    .callDes{
+        width: 42%;
+    }
+    .foterBootom1{
+        width: 15%;
+    }
+}
+@media(min-width:992px){
+    .dropdown ul li:hover{
+        background-color:  #48556d;
+     }
+    .dropdown:hover ul{
+        display: block;
     }
 }
 @media(max-width:991px){
     .item-views.news_block.portfolio.type_2 .item .special{
         padding: 108px;
+    }
+    .lang{
+        display: none;
     }
     .callDes .callHead{
         font-size: 23px !important;
@@ -1054,7 +1145,6 @@ text-decoration: none;
     }
     .hanburger-menu{
         display: flex;
-        margin-left:50px;
     }
     .collapse{
         background-color:#fff;
@@ -1117,12 +1207,19 @@ text-decoration: none;
     }
     .collapse .bid{
         display: block;
+        padding:15px;
+        background-color: gray;
+        width: 111%;
+        margin-left: -35px;
     }
-    .contactHead .phone{
-        display:inherit;
+    .contactHead .phone, .contactHead .bid {
+        display: none;
     }
     .collapse .navbar-nav{
         border-bottom: 0px solid gray;
+    }
+    .dropdown ul{
+        position: inherit;
     }
 }
 @media(max-width:768px){
@@ -1131,30 +1228,27 @@ text-decoration: none;
     }
     .item-views.news_block.portfolio.type_2 .item .name {
         font-size: 17px;
+        line-height: 20px;
     }
     .item-views.news_block.portfolio.type_2 .item .info{
-        padding: 0 26px;
+        padding: 15px;
     }
     .callDes{
-        padding-right:0 !important;
+        padding-left: 40px !important;
+        padding-right: 80px !important;
+        width:55%;
     }
     .callDes .callHead{
         font-size: 22px !important;
     }
     .callDes .callLink a{
         padding: 16px 33px;
+        width: 100%;
+        font-size: 16px;
     }
     .callWrapper{
+        height: 310px;
         background-size: 81%;
-    }
-    .footer_bottom .okmedia {
-        width: 14%;
-    }
-    /* .caruselImg{
-        display: none;
-    } */
-    .carsuelInfo{
-        justify-content: center;
     }
     .caruselText{
         padding: 0;
@@ -1176,12 +1270,113 @@ text-decoration: none;
     .bid{
         display: none;
     }
-    /* .contactHead .phone{
+    .owl-carousel .owl-item img{
+        width: 60%;
+        margin: 0 auto;  
+    }
+    .logo span{
+        display:none;
+    }
+    .profit-title{
+        font-size: 23px;
+    }
+    .autoWrapper p{
+        font-size: 18px;
+    }
+    .wrapper{
+        padding: 0 20px;
+    }
+    .wrapper .navbar-header{
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .carsuelInfo{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+    }
+    .caruselText, .caruselText .btn{
+        width: 100%;
+        text-align: center;
+    }
+    .hanburger-menu{
+        margin: 0 0 0 325px;
+    }
+    .owlItem{
+        height: 500px !important;
+    }
+    .news_block .item .date{
         display: none;
-    } */
+    }
+    .caruselText h1{
+        font-size: 32px;
+        padding: 0;
+    }
+    .caruselText .btn{
+        padding: 10px 7px;
+        margin-bottom: 20px;
+    }
+    .wrapper .navbar-header{
+        padding: 10px 0;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        font-size: 15px;
+        padding: 10px 0 !important;
+        display: flex;
+        align-items: center;
+    }
+    .collapse .navbar-nav .nav-item{
+        padding: 0;
+    }
+    .collapse{
+        padding: 0px 35px;
+    }
+    .collapse .bid{
+        width: 122%;
+    }
+    .owl-dots button.owl-dot{
+        width: 8px;
+        height: 8px;
+    }
+    .supWrapper{
+        margin: 0 0 80px 0;
+    }
+    .superiorities .supInside{
+        margin-bottom: 10px;
+    }
+    .superiorities .img-bg {
+        height: 60px;
+    }
+    .supInside p{
+        line-height: 16px;
+    }
+    .autoWrapper .item__main p a{
+        font-size: 18px;
+    }
+    .autoWrapper{
+        padding-bottom: 0;
+    }
+    .footer_bottom{
+        flex-direction: column;
+    }
+    .footer_bottom .okmedia, .foterBootom1{
+        width: 100%;
+        text-align: center;
+        padding: 0 0 5px 0;
+    }
+    #referance h1{
+        padding: 1rem;
+    }
+    .call-to-action .container{
+        margin-bottom: 35px;
+    }
 }
 @media (max-width:756px){
-   
+    
     .autoWrapper {
         width: calc(48.33% - 20px);
         margin: 10px;
@@ -1190,25 +1385,7 @@ text-decoration: none;
         padding-bottom: 25px;
         transition: all .3s ease;
         will-change: transform;
-    }
-    .callDes {
-        width: 100%;
-        height: 100%;
-        padding-left: 57px !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        color: white;
-        position: relative;
-        z-index: 100;
-    }
-    .call-to-action .callWrapper {
-        height: 480px;
-        width: 100%;
-        border-radius: 15px;
-        position: relative;
-    }
+    } 
     .callDes .callHead {
         font-size: 30px !important;
     }
@@ -1223,16 +1400,12 @@ text-decoration: none;
         height: auto;
         position: relative;
     }
+    .owlItem{
+        height: 500px !important;
+    }
 }
 
 @media (max-width:576px){
-    .callDes .callLink a {
-        padding: 9px 34px;
-
-    }
-    .wrapper .navbar-header {
-        line-height: 0
-    }
     .contactHead {
         align-items: center;
         justify-content: center;
@@ -1243,53 +1416,46 @@ text-decoration: none;
         margin-top: 50px;
         position: relative;
         min-height: 1px;
-        width: 240px;
+        width: 49%;
         text-align: left;
-        height: 175px;
         margin: 00 auto;
         padding-right: 15px;
         padding-left: 15px;
         margin-bottom: 50px;
     }
-    callDes {
+    .callDes {
+        width: 68%;
         padding-left: 24px !important;
     }
     .footer .footer_top{
         text-align: center;
     }
-
-    .foterBootom1 {
-        color: #999;
-        font-size: 13px;
-        padding: 0;
-        text-align: left;
+    .contact-block{
+        width: 70%;
+        margin: 20px auto;
+    }
+    .autosection {
+        margin-top: 0;
+    }
+    .hanburger-menu{
+        margin: 0 0 0 212px;
+    }
+    .supWrapper{
         margin: 0;
     }
-    .footer_bottom .okmedia {
-        text-align: center;
-            }    
-   .contact-block{
-    width: 70%;
-    margin: 20px auto;
-   }
-   .autosection {
-    margin-top: 0;
-}
+    .callWrapper{
+        background-size: 109%;
+    }
 }
 @media (max-width:425px){
     .callWrapper{
+        height: 260px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position-x: inherit;
     }
-    .footer_bottom .okmedia {
-        width: 22%;
-    }
-    .caruselText h1{
-        font-size: 35px;
-    }
-    .caruselText .btn{
-        padding: 10px 14px;
+    .caruselText{
+        margin-bottom: 20px;
     }
     .phone a{
         font-size: 12px;
@@ -1297,34 +1463,57 @@ text-decoration: none;
     .bid span{
         font-size: 12px;
     }
-    .caruselText h1{
-        font-size: 32px;
-    }
-    .caruselText .btn{
-        padding: 10px 7px;
-    }
-    .hanburger-menu{
-        margin-left: 134px;
-    }
-    .carsuelInfo{
-        padding: 15px 0;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .caruselImg, .caruselText{
-        width: 100%;
-    }
     .footer_bottom{
         padding: 0 15px;
         text-align: left;
     }
     .footer_top{
         text-align: left;
-        padding-left: 40px;
     }
-    .contactHead .phone{
-        display: none;
+    .callDes{
+        width: 100%;
+    }
+    .hanburger-menu{
+        margin: 0 0 13px 152px;
+    }
+    .collapse .bid{
+        width: 126%;
+    }
+    .supWrapper{
+        margin: 0;
+    }
+}
+@media (max-width:375px){
+    .hanburger-menu{
+        margin: 0px 0 21px 129px;
+    }
+    .callDes{
+        padding: 0 60px !important;
+    }
+}
+@media (max-width:320px){
+    .item-views.news_block.portfolio.type_2 .item .special{
+        padding: 69px;
+    }
+    .item-views.news_block.portfolio.type_2 .item .name {
+        font-size: 14px;
+    }
+    .callDes{
+        padding: 0 42px !important;
+    }
+    .callDes .callHead{
+        font-size: 29px !important;
+    }
+    .footer_bottom{
+        flex-direction: column;
+    }
+    .footer_bottom .okmedia{
+        width: 100%;
+    }
+    .foterBootom1{
+        padding: 15px 0 0  0;
+    }
+    .autosection .row {
+        margin-right: 0 !important;
     }
 }

@@ -1,0 +1,151 @@
+@media(max-width:768px){
+    .item-views.news_block.portfolio.type_2 .item .special{
+        padding: 78px;
+    }
+    .item-views.news_block.portfolio.type_2 .item .name {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .item-views.news_block.portfolio.type_2 .item .info{
+        padding: 15px;
+    }
+    .callDes{
+        padding-left: 40px !important;
+        padding-right: 80px !important;
+        width:55%;
+     
+    }
+    .callDes .callHead{
+        font-size: 22px !important;
+    }
+    .callDes .callLink a{
+        padding: 16px 33px;
+        width: 100%;
+        font-size: 16px;
+    }
+    .callWrapper{
+        height: 310px;
+        background-size: 81%;
+    }
+    .caruselText{
+        padding: 0;
+        width: 50%;
+    }
+    .footer_top .row{
+        width: 100% !important;
+    }
+    .logo, .contactHead{
+        width: 50%;
+    }
+    .autosection .row{
+        justify-content: center !important;
+        margin-left: 0;
+    }
+    .navbar-nav{
+        display: block;
+    }
+    .bid{
+        display: none;
+    }
+    .owl-carousel .owl-item img{
+        width: 75%;
+        margin: 0 auto;
+        
+    }
+    .logo span{
+        display:none;
+    }
+    .profit-title{
+        font-size: 23px;
+    }
+    .autoWrapper p{
+        font-size: 18px;
+    }
+    .wrapper{
+        padding: 0 20px;
+    }
+    .wrapper .navbar-header{
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .carsuelInfo{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+    }
+    .caruselText, .caruselText .btn{
+        width: 100%;
+        text-align: center;
+    }
+    .hanburger-menu{
+        margin: 0 0 0 325px;
+        color: transparent;
+    }
+    .owlItem{
+        height: 500px !important;
+    }
+    .news_block .item .date{
+        display: none;
+    }
+    .caruselText h1{
+        font-size: 32px;
+        padding: 0;
+    }
+    .caruselText .btn{
+        padding: 10px 7px;
+        margin-bottom: 20px;
+    }
+    .wrapper .navbar-header{
+        padding: 10px 0;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        font-size: 15px;
+        padding: 10px 0 !important;
+        display: flex;
+        align-items: center;
+    }
+    .collapse .navbar-nav .nav-item{
+        padding: 0;
+    }
+    .collapse{
+        padding: 0px 35px;
+    }
+    .owl-dots button.owl-dot{
+        width: 8px;
+        height: 8px;
+    }
+    .supWrapper{
+        margin: 0;
+    }
+    .superiorities .supInside{
+    
+        margin-bottom: 10px;
+    }
+    .supInside p{
+        line-height: 16px;
+    }
+    .autoWrapper .item__main p a{
+        font-size: 18px;
+    }
+    .autoWrapper{
+        padding-bottom: 0;
+    }
+    .footer_bottom{
+        flex-direction: column;
+    }
+    .footer_bottom .okmedia, .foterBootom1{
+        width: 100%;
+        text-align: center;
+        padding: 0 0 5px 0;
+    }
+    #referance h1{
+        padding: 1rem;
+    }
+    .call-to-action .container{
+        margin-bottom: 35px;
+    }
+}

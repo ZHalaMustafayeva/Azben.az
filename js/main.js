@@ -38,19 +38,20 @@ $(document).ready(function () {
     owl.trigger('stop.owl.autoplay');
     owl.trigger('play.owl.autoplay');
   });
-
+  //  Mobile mENU 
   $('.hanburger-menu').click(function () {
     $('.collapse').css("display", "block");
     $('.hanburger-menu').toggleClass('active-hamb');
     if ($('.hanburger-menu').hasClass('active-hamb')) {
       $('.mobile-ovarley').show();
-      $('.collapse').animate({ right: '-40px' }, 300, 'linear');
+      $('.collapse').animate({ right: '-39px' }, 300, 'linear');
       $('.navbar').css("overflow", "visible")
+      $(".navbar-fixed-top").css("background", "white ");
     }
     else {
       $('.mobile-ovarley').hide();
       $('.collapse').animate({ right: '-100%' }, 300, 'linear');
-      $('.navbar').css("overflow", "hidden")
+      $('.navbar').css("overflow", "hidden");
     }
   })
   $(".mobile-ovarley").click(function () {
@@ -58,5 +59,30 @@ $(document).ready(function () {
     $('.mobile-ovarley').hide();
     $('.collapse').animate({ right: '-100%' }, 300, 'linear');
   });
+    //Scroll on
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll) {
+      $(".navbar-fixed-top").css("background", "white");
+    }
+    else {
+      if (!($('.hanburger-menu').hasClass('active-hamb'))) {
+
+        $(".navbar-fixed-top").css("background", "transparent");
+      }
+    }
+  })
+}) 
+//Languages
+$('.az').click(function (e) {
+  e.stopPropagation();
+  $('.mix-lang').slideToggle();
 });
+
+$('.dropdown').click(function () {
+  $('.open').toggle(300);
+})
+
+
+
 
