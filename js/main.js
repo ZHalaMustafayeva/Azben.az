@@ -82,7 +82,3 @@ $('.az').click(function (e) {
 $('.dropdown').click(function () {
   $('.open').toggle(300);
 })
-
-
-
-

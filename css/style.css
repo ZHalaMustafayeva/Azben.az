@@ -45,7 +45,6 @@ body{
     outline: none !important;
     overflow-x: hidden;
 }
-
 header .container-fluid {
     max-width: 1200px;
     padding: 0px 15px;
@@ -56,7 +55,6 @@ header{
     position: absolute;
     z-index: 200;
     width: 100%;
-    /* height: 130px; */
     background: none;
 }
 .az{
@@ -72,16 +70,19 @@ header{
 .az a{
     margin-top: 3px;
 }
+.az i{
+    font-size: 14px;
+    margin-left: 5px;
+}
 .mix-lang{
-    display: block;
-    display: none;
     position: absolute;
     top: 60px;
     border-radius: 6px;
     border: 1px solid #f0eded;
     background-color: #fff;
     z-index: 1;
-
+    padding: 0 8px;
+    display:none
 }
 .mix-lang a{
     display: block;
@@ -107,7 +108,9 @@ header{
     margin: 8px 0 0 0 !important;
     padding:0 !important;
 }
-/* nav */
+
+    /* nav */
+
 .navbar {
     padding: 0 !important;
 }
@@ -118,10 +121,6 @@ header{
 .logo img{
 	width: 160px;
 	margin-right: 17px;
-}
-.logo span{
-	opacity: 0.7;
-
 }
 .contactHead{
     align-items: center;
@@ -150,7 +149,6 @@ header{
 .bid a i{
     color: #2d2961;
 }
-
 .collapse .navbar-nav{
 	width: 100%;
     display: flex;
@@ -161,7 +159,6 @@ header{
 .collapse .navbar-nav:first-child {
     margin-left: 0;
 }
-
 .collapse .navbar-nav  .nav-item {
     display: inline-block;
     float: none;
@@ -185,7 +182,6 @@ header{
 .collapse .navbar-nav .nav-item .nav-link:hover:after {
 	width: 100%;
 }
-
 .fixed {
 	position: fixed;
 	top: 0;
@@ -197,7 +193,6 @@ header{
     background-color: #fff !important;
     color:black !important;
 }
-
 .collapse .navbar-nav  a {
     line-height: 20px!important;
     font-size: 13px;
@@ -206,7 +201,6 @@ header{
     border-top: none;
     border-bottom: 1px solid transparent;
 }
-
 .navbar-light .navbar-nav .nav-link {
 	color: #2b3c5b !important;
     font-weight: bold;
@@ -245,7 +239,6 @@ header{
 .collapse .phone{
     display: none;
 }
-
 .con{
     width: 100%;
 }
@@ -284,7 +277,6 @@ header{
 }
 #carouselExampleIndicators:hover .owl-nav{
 	display: block;
-
 }
 .owl-nav button span {
     padding: 0;
@@ -386,7 +378,9 @@ header{
 .owl-nav button:focus {
     outline: none;
 }
-/* superiorities */
+
+    /* superiorities */
+
 .superiorities{
     background-color: #f3f6f9;
     height: auto;
@@ -428,7 +422,7 @@ header{
     margin-bottom: 80px;
 }
 .supInside p{
-color: #525c70;
+    color: #525c70;
 }
 
 /* Products */
@@ -462,7 +456,6 @@ color: #525c70;
 .autoWrapper:hover .item__main p a{
     color: #005693;
 }
-
 .autoWrapper img {
     object-fit: contain;
     width: 100%;
@@ -480,21 +473,16 @@ color: #525c70;
     margin-top: 17px;
 }
 .autoWrapper div p a{
-color: #252b33;
-font-size: 27px;
-text-decoration: none;
-
+    color: #252b33;
+    font-size: 27px;
+    text-decoration: none;
 }
 .item__main {
     position: relative;
     padding: 24px 0 0;
 }
 
-
-
-
-
-/* categories */
+    /* categories */
 
 .item-views.blocks {
     margin: 50px 0 0;
@@ -520,7 +508,6 @@ text-decoration: none;
 .item-views.news_block.portfolio.type_2 .items>.wrap {
     margin: -6px;
 }
-
 .item-views.table-elements.portfolio .items .item_wrap {
     padding: 0 6px;
     margin: 6px 0;
@@ -529,7 +516,6 @@ text-decoration: none;
     height: auto;
     margin: 0;
 }
-
 .news_block .item.sliced {
     background: #fff;
 }
@@ -562,7 +548,6 @@ text-decoration: none;
     padding: 23px 30px;
     overflow: hidden;
 }
-
 .item-views.news_block.portfolio.type_2 .item>a {
     position: absolute;
     top: 0;
@@ -571,7 +556,6 @@ text-decoration: none;
     left: 0;
     z-index: 3;
 }
-
 .item-views.news_block.portfolio.type_2 .item .sticker-block {
     display: inline-block;
     padding: 3px 8px 3px;
@@ -643,7 +627,6 @@ text-decoration: none;
 .item-views.news_block.portfolio.type_2 .item:hover::before{
     opacity: 0.8;
 } 
-
 .item-views.blocks .title_block .right_link_block:hover {
     color: #222222;
 	text-decoration: none;
@@ -657,10 +640,8 @@ text-decoration: none;
     padding: 60px 0;
     position: relative;
     z-index: 3;
-        background-color: white;
-
+    background-color: white;
 }
-
 #referance h1 {
     font-size: 28px;
     line-height: 38px;
@@ -669,7 +650,6 @@ text-decoration: none;
     padding: 3rem;
     text-align: center;
 }
-
 #referance ul {
     margin: 0;
     padding: 0;
@@ -683,13 +663,11 @@ text-decoration: none;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
-
 #referance ul li {
    margin: 10px;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
-
 #referance ul li a {
     display: block;
     width: 117px;
@@ -698,8 +676,7 @@ text-decoration: none;
     border-radius: 8px;
     line-height: 120px;
     line-height: 120px;
-    background-color: #ffffff;
-    
+    background-color: #ffffff;   
 }
 #referance ul li a img {
     max-width: 100%;
@@ -708,28 +685,17 @@ text-decoration: none;
     padding: 14px;
 }
 
-
-
-
-
-
-
-
-
-/* call-to-action section */
+        /* call-to-action section */
 
 .call-to-action .container {
     margin-bottom: 100px;
 }
-
 .call-to-action .callWrapper {
     height: 320px;
     width: 100%;
     border-radius: 15px;
     position: relative;
-  
 }
-
 .overlay{
     background-image: linear-gradient(to right, #000000 35%, transparent);
         width: 100%;
@@ -744,7 +710,6 @@ text-decoration: none;
     background-size: 65%;
     background-position: 100% 37%;
 }
-
 .callDes {
     width: 36%;
     height: 100%;
@@ -762,12 +727,9 @@ text-decoration: none;
     line-height: 41px !important;
     color: white;
     width: 100%;
-
 }
-
 .callDes .callmiddle{
     width: 100%;
-
 }
 .callLink{
     width: 100%;
@@ -791,18 +753,13 @@ text-decoration: none;
     border-radius: 8px;
 }
 
+        /* footer */
 
-
-
-
-
-/* footer */
 .footer{
     position: relative;
     margin: -1px 0 0;
     background: #2f3338;
 }
-
 .footer .container{
     padding: 55px 0px 40px 0px;
 }
@@ -839,7 +796,6 @@ text-decoration: none;
 }
 .info{
     line-height: 29px;
-
 }
 .info .phone i, .info .phone a,
 .info .email i, .info .email a,
@@ -878,7 +834,6 @@ text-decoration: none;
     position: relative;
     width: 100%;
 }
-
 .footer .social-icons {
     position: relative;
     display: flex;
@@ -901,14 +856,12 @@ text-decoration: none;
     background: #2f3338;
     z-index: 1;
 }
-
 .social-icons ul {
     margin: 0;
     padding: 0;
     width: auto;
     font-size: 0;
 }
-
 .social-icons ul li {
     display: inline-block;
     vertical-align: top;
@@ -1053,15 +1006,13 @@ text-decoration: none;
     transform: rotate(-91deg) translate(-13px, 1px);
 }
 .active-hamb span:nth-child(3){
-    transform: rotate(-269deg) translate(-10px, 8px);
-        
+    transform: rotate(-269deg) translate(-10px, 8px);     
 } 
 .collapse .bid{
     display:none;
 }
 .bg-color{
     transition: background-color 200ms linear;
-
 }
 .collapse .bid a i, .collapse .bid span{
     color: #fff;
@@ -1269,9 +1220,6 @@ text-decoration: none;
         width: 60%;
         margin: 0 auto;  
     }
-    .logo span{
-        display:none;
-    }
     .profit-title{
         font-size: 23px;
     }
@@ -1299,9 +1247,6 @@ text-decoration: none;
         width: 100%;
         text-align: center;
     }
-    /* .hanburger-menu{
-        margin: 0 0 0 325px;
-    } */
     .owlItem{
         height: 500px !important;
     }
@@ -1324,10 +1269,6 @@ text-decoration: none;
     .collapse .navbar-nav .nav-item{
         padding: 0;
     }
-    /* .collapse{
-        padding: 0px 35px;
-    } */
-   
     .owl-dots button.owl-dot{
         width: 8px;
         height: 8px;
@@ -1426,9 +1367,6 @@ text-decoration: none;
     .autosection {
         margin-top: 0;
     }
-    /* .hanburger-menu{
-        margin: 0 0 0 212px;
-    } */
     .supWrapper{
         margin: 0;
     }
@@ -1463,17 +1401,11 @@ text-decoration: none;
     .callDes{
         width: 100%;
     }
-    /* .hanburger-menu{
-        margin: 0 0 13px 152px;
-    } */
     .supWrapper{
         margin: 0;
     }
 }
 @media (max-width:375px){
-    /* .hanburger-menu{
-        margin: 0px 0 21px 129px;
-    } */
     .callDes{
         padding: 0 60px !important;
     }
