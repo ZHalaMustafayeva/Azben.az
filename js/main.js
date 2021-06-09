@@ -82,3 +82,26 @@ $('.az').click(function (e) {
 $('.dropdown').click(function () {
   $('.open').toggle(300);
 })
+
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  dots:false,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      },
+      1000:{
+          items:2
+      }
+  }
+})
+// $('.owl-nav button').click(function(){
+//   if($('.owl-item').hasClass('active')){
+//     $('.carouselText').addClass('animate__backInDown')
+//   }
+// })
