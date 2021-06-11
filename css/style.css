@@ -244,9 +244,7 @@ header{
 }
 
 /* carusel */
-/* .owl-nav {
-	display: none;
-} */
+
 .owl-nav button {
     height: auto;
     border-radius: 100%;
@@ -269,9 +267,9 @@ header{
 	height: 670px !important;
 	width: 100%;
 }
-.owl-carousel .owl-item img {
+.headerCarusel  .owl-carousel .owl-item img{
     display: block;
-    width: 90%;
+    width: 90% !important;
     height: 100%;
     object-fit: cover;
 }
@@ -384,7 +382,7 @@ header{
 #second-carousel{
     background-color: #fbfbfb;
     padding: 25px;
-    margin-top: -89px;
+    margin-top: -69px;
     z-index: 999;
     position: relative;
     margin-bottom: 20px;
@@ -397,28 +395,45 @@ header{
     border-bottom: 2px solid #e8e8e8;
     margin-bottom: 35px;
 }
+.sec-img img{
+    width: 100%;
+    padding: 40px;
+    object-fit: contain;
+}
 .sec-heading::before{
     content: '';
     position: absolute;
     left:50%;
     transform: translateX(-50%);
-    top: 49px;
+    top: 149px;
     width: 0;
 	height: 0;
 	border-left:8px solid transparent;
 	border-right: 8px solid transparent;
 	border-bottom: 13px solid rgb(199, 194, 194);
 }
+.sec-about{
+    padding-top: 43px;
+}
 .sec-about h1{
     font-size: 30px;
     color:#ed1847 ;
     margin-bottom: 35px;
 }
+/* .sec-car .owl-item{
+    width: 100% !important;
+} */
 .second-text{
-    width: 239px;
-    padding: 20px 26px;
-    background-color: #fff;
-    border: 1px solid rgb(199, 194, 194);
+    width: 100%;
+    padding: 20px 20px;
+    background-color: rgb(36 31 89);
+    border: 1px solid rgb(36 31 89);
+}
+.second-text p{
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 0;
 }
 .sec-car .owl-nav button{
     width: 30px;
@@ -438,7 +453,7 @@ header{
     padding: 10px 15px 15px 15px;
 }
 .second-img{
-    width: 266px;
+    width: 100%;
     height: 165px;
     
 }
@@ -446,7 +461,11 @@ header{
     width: 100%;
     height: 100%;
     border: 1px dotted black;
+    padding: 20px;
+    object-fit: contain;
+    transition: .3s;
 }
+
     /* superiorities */
 
 .superiorities{
@@ -487,69 +506,62 @@ header{
     align-items: center;
     justify-self: center;
     width: 100%;
-    margin-bottom: 80px;
 }
 .supInside p{
     color: #525c70;
 }
 
 /* Products */
-
-.autosection {
-    margin-top: -110px;
+#product{
+    padding:80px 0
 }
-.autoWrapper {
-    width: calc(24.33% - 20px);
-    margin: 10px;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 25px;
-    transition: all .3s ease;
-    will-change: transform; 
-}
-.imgWrapauto {
-    overflow: hidden;
+.product-img{
     width: 100%;
+    height:233px;
 }
-.imgWrapauto img:hover{
-    -webkit-transform: scale(1.03);
-    transform: scale(1.03);
-}
-.autoWrapper .item__main p a{
-    vertical-align: bottom;
-    -moz-transition: all 1s cubic-bezier(0.23, 1, 0.32, 1) 0s;
-    -webkit-transition: all 1s cubic-bezier(0.23, 1, 0.32, 1) 0s;
-    transition: all 1s cubic-bezier(0.23, 1, 0.32, 1) 0s;
-}
-.autoWrapper:hover .item__main p a{
-    color: #005693;
-}
-.autoWrapper img {
-    object-fit: contain;
-    width: 100%;
-    height: 150px;
-    vertical-align: bottom;
-    -moz-transition: all 1s cubic-bezier(0.23, 1, 0.32, 1) 0s;
-    -webkit-transition: all 1s cubic-bezier(0.23, 1, 0.32, 1) 0s;
-    transition: all 1s cubic-bezier(0.23, 1, 0.32, 1) 0s;
-}
-.auto-p-content {
-    text-align: center;
-}
-.autoWrapper p {
-    color: #252b33;
-    margin-top: 17px;
-}
-.autoWrapper div p a{
-    color: #252b33;
-    font-size: 27px;
+.product-wrapper a:hover{
     text-decoration: none;
 }
-.item__main {
-    position: relative;
-    padding: 24px 0 0;
+.product-wrapper{
+    padding: 20px 0;
+    box-shadow: 0 0 5px rgb(0 0 0 / 25%);
+    transition: .3s;
+    margin-bottom: 30px;
+    height: 350px;
+    
 }
-
+.product-wrapper:hover{
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%), 0 0 25px rgb(0 0 0 / 25%);
+}
+.product-wrapper:hover img{
+    transform: scale(1.1);
+}
+.product-img img{
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    object-fit: contain;
+}
+.product-text{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1F92C8;
+    transition: .3s;
+    padding-top: 20px;
+    line-height: 0;
+}
+.product-text:hover{
+    color: #004A8C;
+}
+.product-text h4{
+    font-size: 24px;
+    font-weight: bold;
+}
+.product-text p{
+    font-size: 15px;
+    font-weight: 500;
+}
     /* categories */
 
 .item-views.blocks {
@@ -705,52 +717,13 @@ header{
 /* Referance */
 
 #referance {
-    padding: 60px 0;
+    padding: 100px 0;
     position: relative;
     z-index: 3;
     background-color: white;
 }
-#referance h1 {
-    font-size: 28px;
-    line-height: 38px;
-    letter-spacing: 1.4px;
-    color: #333;
-    padding: 3rem;
-    text-align: center;
-}
-#referance ul {
-    margin: 0;
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    list-style: none;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-#referance ul li {
-   margin: 10px;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-}
-#referance ul li a {
-    display: block;
-    width: 117px;
-    height: 117px;
-    border: 1px solid rgb(242, 242, 242);
-    border-radius: 8px;
-    line-height: 120px;
-    line-height: 120px;
-    background-color: #ffffff;   
-}
-#referance ul li a img {
-    max-width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    padding: 14px;
+.item a:hover{
+    text-decoration: none;
 }
 
         /* call-to-action section */
@@ -1250,6 +1223,14 @@ header{
     }
 }
 @media(max-width:768px){
+    .caruselImg{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    .sec-img img{
+        padding: 70px;
+    }
     .item-views.news_block.portfolio.type_2 .item .special{
         padding: 78px;
     }
@@ -1287,25 +1268,18 @@ header{
     .logo, .contactHead{
         width: 50%;
     }
-    .autosection .row{
-        justify-content: center !important;
-        margin-left: 0;
-    }
     .navbar-nav{
         display: block;
     }
     .bid{
         display: none;
     }
-    .owl-carousel .owl-item img{
-        width: 60%;
+    .headerCarusel  .owl-carousel .owl-item img{
+        width: 60% !important;
         margin: 0 auto;  
     }
     .profit-title{
         font-size: 23px;
-    }
-    .autoWrapper p{
-        font-size: 18px;
     }
     .wrapper{
         padding: 0 20px;
@@ -1354,9 +1328,6 @@ header{
         width: 8px;
         height: 8px;
     }
-    .supWrapper{
-        margin: 0 0 80px 0;
-    }
     .superiorities .supInside{
         margin-bottom: 10px;
     }
@@ -1366,12 +1337,6 @@ header{
     .supInside p{
         line-height: 16px;
     }
-    .autoWrapper .item__main p a{
-        font-size: 18px;
-    }
-    .autoWrapper{
-        padding-bottom: 0;
-    }
     .footer_bottom{
         flex-direction: column;
     }
@@ -1380,15 +1345,8 @@ header{
         text-align: center;
         padding: 0 0 5px 0;
     }
-    #referance h1{
-        padding: 1rem;
-    }
     .call-to-action .container{
         margin-bottom: 35px;
-    }
-    .second-img img{
-        width: 100% !important;
-        margin:0 !important;
     }
     .second-text{
         width: 75%;
@@ -1400,26 +1358,12 @@ header{
     #second-carousel{
         margin-top: 0;
     }
-    .second-img {
-        width:100%;
-        height: 160px;
-    }
     .second-text{
         width: 100%;
     }
    
 }
 @media (max-width:756px){
-    
-    .autoWrapper {
-        width: calc(48.33% - 20px);
-        margin: 10px;
-        position: relative;
-        overflow: hidden;
-        padding-bottom: 25px;
-        transition: all .3s ease;
-        will-change: transform;
-    } 
     .callDes .callHead {
         font-size: 30px !important;
     }
@@ -1467,14 +1411,20 @@ header{
         width: 70%;
         margin: 20px auto;
     }
-    .autosection {
-        margin-top: 0;
-    }
     .supWrapper{
         margin: 0;
     }
 }
 @media (max-width:425px){
+    .sec-img img{
+        padding: 30px;
+    }
+    .product-text h4{
+        font-size: 18px;
+    }
+    .product-text p{
+        font-size: 13px;
+    }
     .call-to-action .callWrapper{
         height: 260px;
         background-size: cover;
@@ -1508,6 +1458,7 @@ header{
     }
     .sec-car .owl-nav button{
         top: -36%;
+      
     }
     
 }
@@ -1543,8 +1494,5 @@ header{
     }
     .foterBootom1{
         padding: 15px 0 0  0;
-    }
-    .autosection .row {
-        margin-right: 0 !important;
     }
 }
